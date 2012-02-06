@@ -11,3 +11,8 @@ Usage
 Download the library and run the Makefile.  On Windows you can just run the mex/mbuild commands from the makefile directly in the Windows/Matlab shell.  Once everything is built follow the instructions in the generated readme.txt file about setting up LD_LIBRARY_PATH. Once that is done simply run the included python file.  This should optimize the banana function using fmincon with one linear inequality constraint and one nonlinear one.
 
 The code should be rather easy to understand and extend to more solvers. I welcome any patches or suggestions.
+
+License
+=======
+
+`LGPL v3 <http://www.gnu.org/licenses/lgpl.html/>`_.: 
