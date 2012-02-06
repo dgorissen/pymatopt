@@ -15,4 +15,4 @@ The code should be rather easy to understand and extend to more solvers. I welco
 License
 =======
 
-`LGPL v3 <http://www.gnu.org/licenses/lgpl.html/>`_.: 
+`LGPL v3 <http://www.gnu.org/licenses/lgpl.html>`_.: 
