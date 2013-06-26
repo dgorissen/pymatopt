@@ -36,7 +36,7 @@ int matlab_fmincon(
 	      ){
 
     /** Intialize MCR and library **/
-    const char* ops = "-nojvm";
+    const char* ops = "-nodesktop";
     /*const char* ops = "";*/
     if (!mclInitializeApplication(&ops, 1)) {
         printf("Error Initializing Application\n");
