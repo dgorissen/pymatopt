@@ -16,7 +16,7 @@ def nonlincon(x):
  
 def fmincon(of,x0,A=[],B=[],Aeq=[],Beq=[],LB=[],UB=[],C=[],Ceq=[],minimize=True):
   # assume the library is in the same directory
-  lib=path.join(path.dirname(path.abspath(__file__)),'liboptimmatlab.so')
+  lib=path.join(path.dirname(path.abspath(__file__)),'liboptimmatlab')
   lo = cdll.LoadLibrary(lib)
 
   # starting point
