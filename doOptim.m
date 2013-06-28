@@ -19,10 +19,10 @@ function [x,fval] = doOptim(f, x0, A, B, Aeq, Beq, LB, UB, nc, c, nceq, ceq)
        end
 
     % Call fmincon
-    opts = optimset('Algorithm','active-set');
-    opts = optimset(opts,'Display','iter');
+    opts = optimoptions('fmincon', 'Algorithm','active-set');
+    opts = optimoptions(opts,'Display','iter');
     %opts = optimset(opts,'MaxFunEvals',maxfun);
-    opts = optimset(opts,'PlotFcns' ,{@optimplotx @optimplotfval,@optimplotfunccount,@optimplotconstrviolation,@optimplotstepsize});
+    opts = optimoptions(opts,'PlotFcns' ,{@optimplotx @optimplotfval,@optimplotfunccount,@optimplotconstrviolation,@optimplotstepsize});
 
     [x,fval] = fmincon(fWrapper,x0,A,B,Aeq,Beq,LB,UB,@confun,opts);
 end
